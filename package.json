@@ -1,0 +1,23 @@
+{
+  "name": "wagers.bet",
+  "version": "1.0.0",
+  "description": "General Wager Bet is a fully decentralized betting platform built on the Solana blockchain that allows the community to launch proposition wagers and trade YES/NO tokens through a pooled orderbook system.",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/blockaimm/wagers.bet.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/blockaimm/wagers.bet/issues"
+  },
+  "homepage": "https://github.com/blockaimm/wagers.bet#readme"
+}

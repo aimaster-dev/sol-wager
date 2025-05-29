@@ -1,59 +1,54 @@
 # Dependencies
 node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+.pnp
+.pnp.js
 
-# Build outputs
-/target
-/dist
-/build
-**/*.rs.bk
-*.pdb
+# Testing
+coverage/
+.nyc_output/
 
-# IDL
-target/idl/
-target/types/
+# Production
+build/
+dist/
+out/
+.next/
 
-# Keys
-*.json
-!package.json
-!package-lock.json
-!tsconfig.json
-!app/package.json
-!app/package-lock.json
-!app/tsconfig.json
-
-# OS files
+# Misc
 .DS_Store
-Thumbs.db
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-
-# Environment variables
+*.pem
 .env
 .env.local
 .env.development.local
 .env.test.local
 .env.production.local
 
-# Test coverage
-coverage/
-*.lcov
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
 
-# Logs
-logs/
-*.log
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
 
 # Anchor
 .anchor/
-**/*.so
+target/
+**/*.rs.bk
+Cargo.lock
 test-ledger/
+.cache/
 
-# React build
-app/build/
+# Keys
+*.json
+!package.json
+!tsconfig.json
+!frontend/package.json
+!frontend/tsconfig.json
+!sdk/package.json
+!sdk/tsconfig.json
+!programs/*/package.json
+!programs/*/tsconfig.json

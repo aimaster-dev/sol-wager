@@ -1,23 +1,35 @@
 {
-  "name": "wagers.bet",
+  "name": "ipredict-xyz",
   "version": "1.0.0",
-  "description": "General Wager Bet is a fully decentralized betting platform built on the Solana blockchain that allows the community to launch proposition wagers and trade YES/NO tokens through a pooled orderbook system.",
-  "main": "index.js",
-  "directories": {
-    "test": "tests"
-  },
+  "description": "iPredict XYZ - Decentralized Prediction Market Platform",
+  "private": true,
+  "workspaces": [
+    "programs/*",
+    "sdk",
+    "frontend"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run build:program && npm run build:sdk && npm run build:frontend",
+    "build:program": "cd programs/ipredict-xyz && anchor build",
+    "build:sdk": "cd sdk && npm run build",
+    "build:frontend": "cd frontend && npm run build",
+    "test": "cd programs/ipredict-xyz && anchor test",
+    "deploy": "chmod +x scripts/deploy.sh && ./scripts/deploy.sh",
+    "deploy:localnet": "npm run deploy localnet",
+    "deploy:devnet": "npm run deploy devnet",
+    "deploy:mainnet": "npm run deploy mainnet",
+    "init:platform": "ts-node scripts/init-platform.ts",
+    "test:wager": "ts-node scripts/test-wager.ts",
+    "dev": "cd frontend && npm run dev",
+    "install:all": "npm install && cd programs/ipredict-xyz && npm install && cd ../../sdk && npm install && cd ../frontend && npm install"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/blockaimm/wagers.bet.git"
+  "devDependencies": {
+    "prettier": "^3.0.0",
+    "typescript": "^5.0.0",
+    "ts-node": "^10.9.0",
+    "@types/node": "^20.10.0"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/blockaimm/wagers.bet/issues"
-  },
-  "homepage": "https://github.com/blockaimm/wagers.bet#readme"
+  "engines": {
+    "node": ">=18.0.0"
+  }
 }

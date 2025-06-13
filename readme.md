@@ -1,6 +1,6 @@
-# SolWager - Decentralized Prediction Protocol
+# iPredict XYZ - Decentralized Prediction Markets
 
-SolWager is a fully decentralized prediction market platform built on the Solana blockchain. It enables users to create and trade markets on real-world event outcomes using a dual-token system (YES/NO). SolWager uses on-chain order books and smart contracts to ensure transparent, permissionless, and low-fee trading.
+iPredict XYZ is a fully decentralized prediction market platform built on the Solana blockchain. It enables users to create and trade markets on real-world event outcomes using a dual-token system (YES/NO). iPredict XYZ uses on-chain order books and smart contracts to ensure transparent, permissionless, and low-fee trading.
 
 ## 🚀 Features
 
@@ -14,9 +14,9 @@ SolWager is a fully decentralized prediction market platform built on the Solana
 ## 📁 Project Structure
 
 ```
-solwager/
+sol-wager/
 ├── programs/           # Solana smart contracts (Rust/Anchor)
-│   └── solwager/       # Main program
+│   └── ipredict-xyz/   # Main program
 ├── sdk/                # TypeScript SDK
 ├── frontend/           # Next.js web app
 ├── scripts/            # Deployment and utility scripts
@@ -34,8 +34,8 @@ solwager/
 ## 🧱 Installation
 
 ```bash
-git clone https://github.com/your-repo/solwager.git
-cd solwager
+git clone https://github.com/your-repo/sol-wager.git
+cd sol-wager
 npm run install:all
 npm run build
 ```
@@ -105,9 +105,9 @@ npm run deploy:mainnet
 ## 💻 SDK Usage
 
 ```ts
-import { SolwagerClient } from '@solwager/sdk';
+import { IpredictClient } from '@ipredict-xyz/sdk';
 
-const client = new SolwagerClient(connection, wallet);
+const client = new IpredictClient(connection, wallet);
 const tx = await client.createWager({
   name: "Will Bitcoin reach $100k?",
   description: "YES if BTC hits $100,000",
@@ -150,10 +150,10 @@ MIT License — see LICENSE file.
 
 ## 🔗 Links
 
-* Website: [solwager.xyz](https://solwager.xyz)
-* Docs: [docs.solwager.xyz](https://docs.solwager.xyz)
-* Twitter: [@solwager](https://twitter.com/solwager)
-* Discord: Join our community
+* Website: [ipredict.xyz](https://ipredict.xyz)
+* Docs: [docs.ipredict.xyz](https://docs.ipredict.xyz)
+* Twitter: [@ipredictxyz](https://twitter.com/ipredictxyz)
+* Discord: [Join our community](https://discord.gg/ipredictxyz)
 
 ## ⚠️ Disclaimer
 
